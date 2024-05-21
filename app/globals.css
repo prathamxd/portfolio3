@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner {
+  animation: normalScroll var(--speed) linear infinite backwards;
+}
+
+.reverseBanner {
+  animation: reverseScroll var(--speed) linear infinite backwards;
+}
+
+@keyframes normalScroll {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@keyframes reverseScroll {
+  0% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
