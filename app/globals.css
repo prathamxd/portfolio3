@@ -29,3 +29,15 @@
     transform: translate(0);
   }
 }
+
+.shadow-upper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.75); /* White shadow */
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}

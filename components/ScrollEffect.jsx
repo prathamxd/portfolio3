@@ -1,6 +1,6 @@
 import "../app/globals.css";
 
-const scrollTags = ["UI`UX", "DEVELOPER", "RESEARCH", "DESIGNS", "FRONTEND"];
+const scrollTags = ["UI/UX", "DEVELOPER", "RESEARCH", "DESIGNS", "FRONTEND"];
 
 const Tags = ({ bannerClass }) => {
   return (
@@ -12,7 +12,7 @@ const Tags = ({ bannerClass }) => {
         >
           {scrollTags.map((tag, idx) => (
             <div key={idx} className="text-7xl font-bold px-16">
-              <p>{tag}</p>
+              <pre>{tag}</pre>
             </div>
           ))}
         </section>
@@ -22,7 +22,7 @@ const Tags = ({ bannerClass }) => {
         >
           {scrollTags.map((tag, idx) => (
             <div key={idx} className="text-7xl font-bold px-16">
-              <p>{tag}</p>
+              <pre>{tag}</pre>
             </div>
           ))}
         </section>
@@ -32,7 +32,7 @@ const Tags = ({ bannerClass }) => {
         >
           {scrollTags.map((tag, idx) => (
             <div key={idx} className="text-7xl font-bold px-16">
-              <p>{tag}</p>
+              <pre>{tag}</pre>
             </div>
           ))}
         </section>
