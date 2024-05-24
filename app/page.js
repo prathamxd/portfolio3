@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <Hero />
       <ScrollEffect />
-      <RecentWork />
+      <RecentWork noOfProjects={4} />
       <Socials />
     </main>
   );

@@ -80,3 +80,51 @@ export const projects = [
     ],
   },
 ];
+
+import { RiJavascriptLine } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { RiTailwindCssLine } from "react-icons/ri";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { FaCss3 } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+
+export const skills = [
+  {
+    skill: "Javascript",
+    icon: <RiJavascriptLine size={32} style={{ color: "#ECD74D" }} />,
+  },
+  {
+    skill: "Typescript",
+    icon: <TbBrandTypescript size={32} style={{ color: "#3178C6" }} />,
+  },
+  {
+    skill: "Next.js",
+    icon: <TbBrandNextjs size={32} />,
+  },
+  { skill: "React", icon: <FaReact size={32} style={{ color: "#00D8FF" }} /> },
+  {
+    skill: "Tailwind CSS",
+    icon: <RiTailwindCssLine size={32} style={{ color: "#1AB9BC" }} />,
+  },
+  {
+    skill: "HTML",
+    icon: <AiOutlineHtml5 size={32} style={{ color: "#F46A39" }} />,
+  },
+  { skill: "CSS", icon: <FaCss3 size={32} style={{ color: "#29A9DF" }} /> },
+  { skill: "Redux", icon: <SiRedux size={32} style={{ color: "#764ABC" }} /> },
+];
+
+export const experience = [
+  {
+    company: "RightChoice.ai",
+    role: "Frontend Developer Intern",
+    duration: "Feb 2024 - April 2024",
+  },
+  {
+    company: "Achintya Solutions",
+    role: "Fullstack Developer Intern",
+    duration: "Sept 2023 - Dec 2023",
+  },
+];

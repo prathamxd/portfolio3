@@ -22,7 +22,7 @@ const Socials = () => {
           target="_blank"
           className="border-t-[1px] border-gray-600 bg-[#1A1A1A] rounded-2xl w-[12.5%] flex items-center justify-center"
         >
-          <FaLinkedin size={38} />
+          <FaLinkedin size={38} color="#007BB6" />
         </a>
         <a
           href="https://github.com/prathamxd"
@@ -36,7 +36,7 @@ const Socials = () => {
           target="_blank"
           className="border-t-[1px] border-gray-600 bg-[#1A1A1A] rounded-2xl w-[12.5%] flex items-center justify-center"
         >
-          <FaDiscord size={38} />
+          <FaDiscord size={38} color="#7389DC" />
         </a>
       </div>
     </div>

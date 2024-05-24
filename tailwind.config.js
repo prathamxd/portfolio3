@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: { "theme-primary": { accentColor: "#4ade80" } },
+      fontFamily: {
+        unbounded: ["Unbounded"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

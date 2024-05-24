@@ -7,13 +7,14 @@ const Hero = () => {
         <p className="h-2 w-2 bg-green-400 rounded-full"></p>
         <p className="text-sm">Availible for hire</p>
       </div>
-      <p className="text-6xl font-bold w-[70%] ">
-        Hi, I&apos;m Narayan, a product designer from Ireland.
+      <p className="text-6xl font-semibold font-unbounded">
+        Hi, I&apos;m <span className="text-green-400">Pratham</span>, a software
+        developer.
       </p>
-      <p className="leading-8 w-[70%] ">
-        With a background in industrial design and a keen eye for detail, I
+      <p className="leading-8 w-[70%] text-xl text-balance font-mono text-zinc-500">
+        With a background in software development and a keen eye for detail, I
         excel at transforming concepts into tangible realities by seamlessly
-        integrating aesthetics with practical functionality.
+        integrating user interfaces with practical functionality.
       </p>
     </div>
   );
