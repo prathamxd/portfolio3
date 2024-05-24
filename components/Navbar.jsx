@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between px-36 h-28 items-center font-mono">
+    <div className="flex justify-between md:px-36 px-7 h-28 items-center font-mono">
       <Link href="/" className="text-xl hover:text-theme-primary-accentColor font-semibold">
         pluffy.dev
       </Link>

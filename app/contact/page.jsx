@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="pl-36 space-y-6">
         <p className="text-6xl font-bold">Contact.</p>
         <p className="text-lg w-[37%] font-mono">
-          I'm always{" "}
+          I&apos;m always{" "}
           <span className="text-theme-primary-accentColor">
             excited to connect
           </span>{" "}

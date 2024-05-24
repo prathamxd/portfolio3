@@ -18,12 +18,13 @@ const ProjectDetails = ({ project }) => {
           <p>{project.year}</p>
         </div>
       </div>
- 
+
       <Image
         src={project.img1}
         width={1200}
         height={1200}
         className="rounded-3xl"
+        alt={project.tag}
       />
 
       <div className="w-[50%]">
@@ -35,14 +36,15 @@ const ProjectDetails = ({ project }) => {
         src={project.img2}
         width={1200}
         height={1200}
+        alt={project.tag}
         className="rounded-3xl"
       />
 
       <div className="w-[50%]">
         <h1 className="text-3xl font-bold mb-7">Tech Stack </h1>
         <div className="space-y-3">
-          {project.techStack.map((item) => (
-            <div className="flex items-center gap-3 text-lg">
+          {project.techStack.map((item, idx) => (
+            <div key={idx} className="flex items-center gap-3 text-lg">
               <Image src={item.icon} width={20} height={20} />
               <p>{item.tech}</p>
             </div>
@@ -54,6 +56,7 @@ const ProjectDetails = ({ project }) => {
         src={project.img3}
         width={1200}
         height={1200}
+        alt={project.tag}
         className="rounded-3xl"
       />
 
