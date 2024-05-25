@@ -5,9 +5,9 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Approach = () => {
   return (
-    <div className="px-36 mt-36">
-      <h1 className="text-3xl font-bold mb-10">MY APPROACH</h1>
-      <div className="flex gap-10">
+    <div className="md:px-36 px-7 mt-36">
+      <h1 className="md:text-3xl text-xl font-bold mb-10">MY APPROACH</h1>
+      <div className="flex md:flex-row flex-col gap-10">
         <div className="border-t-[1px] border-gray-600 bg-[#1A1A1A] rounded-3xl p-5 space-y-3">
           <HiOutlineUsers size={35} className="text-blue-500" />
           <p className="text-xl font-semibold">User centred</p>

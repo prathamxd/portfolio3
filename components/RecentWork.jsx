@@ -9,7 +9,7 @@ const RecentWork = ({ noOfProjects }) => {
   const router = useRouter();
 
   return (
-    <div className="md:px-28 px-7 mt-36">
+    <div className="md:px-28 px-7 mt-20 md:mt-36">
       <h1 className="md:text-3xl text-lg font-bold mb-7">RECENT WORK</h1>
       <div className="md:grid md:grid-cols-2 md:grid-rows-2 flex flex-col gap-4 ">
         {projects.slice(0, noOfProjects).map((project, idx) => (

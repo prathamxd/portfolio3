@@ -1,32 +1,42 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import NavLinks from "./NavLInks";
 
 const Navbar = () => {
+  const [dropdown, setDropdown] = useState(false);
+
   return (
     <div className="flex justify-between md:px-36 px-7 h-28 items-center font-mono">
-      <Link href="/" className="text-xl hover:text-theme-primary-accentColor font-semibold">
+      <Link
+        href="/"
+        className="text-xl hover:text-theme-primary-accentColor font-semibold"
+      >
         pluffy.dev
       </Link>
-      <div className="space-x-10 text-lg">
-        <Link href="/about" className="hover:text-theme-primary-accentColor">
-          /About
-        </Link>
-        <Link href="/work" className="hover:text-theme-primary-accentColor">
-          /Work
-        </Link>
-        <Link href="/contact" className="hover:text-theme-primary-accentColor">
-          /Contact
-        </Link>
-        <a
-          target="_blank"
-          className="hover:text-theme-primary-accentColor"
-          href="https://drive.google.com/file/d/1LHXjdfDc5yvvy08gRKB8pbVQqIGEsJVK/view?usp=sharing"
-        >
-          /Resume
-        </a>
-      </div>
+
+      {window.screen.width < 1000 && (
+        <div className="relative inline-block md:hidden">
+          <button onClick={() => setDropdown(!dropdown)}>
+            <RxHamburgerMenu size={30} />
+          </button>
+
+          {dropdown && (
+            <div className=" w-36 h-56 bg-[#1A1A1A] p-3 absolute -ml-28 mt-2 text-right lg:hidden rounded-md">
+              <NavLinks />
+            </div>
+          )}
+        </div>
+      )}
+
+      <ul className="hidden text-lg lg:block">
+        <NavLinks />
+      </ul>
     </div>
   );
 };
 
 export default Navbar;
+
+//                className="regular-16 text-gray-50 cursor-pointer pb-1.5 transition-all hover:font-bold "

@@ -4,7 +4,7 @@ const scrollTags = ["UI/UX", "DEVELOPER", "RESEARCH", "DESIGNS", "FRONTEND"];
 
 const Tags = ({ bannerClass }) => {
   return (
-    <div className="relative w-full overflow-hidden h-20 md:my-5 -my-10">
+    <div className="relative w-full overflow-hidden h-10 md:h-20 md:my-5 ">
       <div className="absolute flex">
         <section
           className={`${bannerClass} flex`}

@@ -6,17 +6,17 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="space-y-32 my-28">
-      <div className="pl-36 space-y-6">
-        <p className="text-6xl font-bold">About.</p>
-        <p className="text-3xl w-[35%] font-mono">
+    <div className="md:space-y-32 space-y-24 my-28">
+      <div className="md:pl-36 pl-7 space-y-6">
+        <p className="md:text-6xl text-5xl font-bold">About.</p>
+        <p className="md:text-3xl text-xl md:w-[35%] w-[90%] font-mono">
           I&apos;m a{" "}
           <span className="text-theme-primary-accentColor">
             software developer
           </span>{" "}
           from New Delhi, India with a passion for music.
         </p>
-        <p className="text-lg w-[37%] font-mono">
+        <p className="text-lg md:w-[37%] w-[90%] font-mono text-zinc-500">
           I have a deep passion for{" "}
           <span className="text-theme-primary-accentColor">
             music and nature
