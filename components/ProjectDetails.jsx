@@ -1,14 +1,16 @@
 import { SlCalender } from "react-icons/sl";
 import { GoBriefcase } from "react-icons/go";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 const ProjectDetails = ({ project }) => {
   return (
-    <div className="flex flex-col items-center gap-20 pt-20 pb-36">
-      <h1 className="text-5xl font-bold">{project.title}</h1>
+    <div className="flex flex-col items-center gap-20 pt-20 pb-36 px-7 md:px-0">
+      <h1 className="md:text-5xl text-center text-3xl font-bold">
+        {project.title}
+      </h1>
 
-      <div className="flex items-center gap-5 text-base font-semibold">
+      <div className="flex items-center gap-5 text-base font-mono font-semibold">
         <div className="rounded-full bg-[#1A1A1A] border-t-[1px] border-gray-600 px-5 py-2 flex items-center gap-4">
           <GoBriefcase />
           <p>{project.tag}</p>
@@ -27,9 +29,11 @@ const ProjectDetails = ({ project }) => {
         alt={project.tag}
       />
 
-      <div className="w-[50%]">
+      <div className="md:w-[50%]">
         <h1 className="text-3xl font-bold mb-7">Description</h1>
-        <p className="leading-7">{project.description}</p>
+        <p className="leading-7 text-zinc-400 font-mono">
+          {project.description}
+        </p>
       </div>
 
       <Image
@@ -40,9 +44,9 @@ const ProjectDetails = ({ project }) => {
         className="rounded-3xl"
       />
 
-      <div className="w-[50%]">
+      <div className="md:w-[50%] w-full">
         <h1 className="text-3xl font-bold mb-7">Tech Stack </h1>
-        <div className="space-y-3">
+        <div className="space-y-3 font-mono">
           {project.techStack.map((item, idx) => (
             <div key={idx} className="flex items-center gap-3 text-lg">
               <Image src={item.icon} width={20} height={20} />
@@ -60,9 +64,9 @@ const ProjectDetails = ({ project }) => {
         className="rounded-3xl"
       />
 
-      <div className="w-[50%]">
+      <div className="md:w-[50%] w-full">
         <h1 className="text-3xl font-bold mb-7">Links</h1>
-        <div className="flex flex-col space-y-2  text-lg">
+        <div className="flex flex-col space-y-5 font-mono text-lg">
           <div className="flex items-center gap-3">
             <FaExternalLinkAlt size={17} />
             <a href={project.link} target="_blank" className="hover:underline">
@@ -70,7 +74,7 @@ const ProjectDetails = ({ project }) => {
             </a>
           </div>
           <div className="flex items-center gap-3">
-            <FaExternalLinkAlt size={17} />
+            <FaGithub size={17} />
             <a
               href={project.github}
               target="_blank"

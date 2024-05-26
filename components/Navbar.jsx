@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import NavLinks from "./NavLInks";
 
