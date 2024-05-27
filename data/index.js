@@ -13,7 +13,7 @@ export const projects = [
     link: "https://stress-analyzer.vercel.app/",
     github: "https://github.com/prathamxd/stress-analyzer",
     techStack: [
-      { tech: "Next", icon: "/images/nextjs.svg" },
+      { tech: "Next.js", icon: "/images/nextjs.svg" },
       { tech: "Javascript", icon: "/images/javascript.svg" },
       { tech: "Tailwind CSS", icon: "/images/tailwind.svg" },
       { tech: "Python", icon: "/images/python.svg" },
@@ -76,6 +76,26 @@ export const projects = [
     techStack: [
       { tech: "Next.js", icon: "/images/nextjs.svg" },
       { tech: "Typescript", icon: "/images/typescript.svg" },
+      { tech: "Tailwind CSS", icon: "/images/tailwind.svg" },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Sumz",
+    route: "sumz-app",
+    img1: "/images/sumz1.png",
+    img2: "/images/sumz2.png",
+    img3: "/images/sumz3.jpeg",
+    tag: "Article Summarizer",
+    year: "2023",
+    description:
+      "This is a free and opensource website which helps you to summarize lenghty articles into clear and concise summaries. It comes with the feature keeping history of links of articles that were summarized earlier. It also has the feature of copying links to previously viewed articles. It makes use of GPT-4 API from OpenAI.",
+    link: "https://sumz-six.vercel.app/",
+    github: "https://github.com/prathamxd/Sumz",
+    techStack: [
+      { tech: "Next.js", icon: "/images/nextjs.svg" },
+      { tech: "Javascript", icon: "/images/javascript.svg" },
       { tech: "Tailwind CSS", icon: "/images/tailwind.svg" },
     ],
   },
