@@ -86,7 +86,7 @@ export const projects = [
     route: "sumz-app",
     img1: "/images/sumz1.png",
     img2: "/images/sumz2.png",
-    img3: "/images/sumz3.jpeg",
+    img3: "/images/sumz3.png",
     tag: "Article Summarizer",
     year: "2023",
     description:
