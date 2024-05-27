@@ -119,6 +119,25 @@ export const projects = [
       { tech: "Tailwind CSS", icon: "/images/tailwind.svg" },
     ],
   },
+  {
+    id: 6,
+    title: "Nike Landing Page",
+    route: "nike-landing-page",
+    img1: "/images/nike1.png",
+    img2: "/images/nike2.png",
+    img3: "/images/nike3.png",
+    tag: "Landing Page",
+    year: "2023",
+    description:
+      "The Nike Landing Page was created using React and Tailwind CSS. It mirrors the sleek design of the official Nike website. React ensures responsiveness and interactivity, while Tailwind CSS enables quick and consistent styling. The page features sections for footwear, apparel, and accessories, along with promotional banners for current deals, providing an intuitive browsing experience that captures Nike's brand essence concisely.",
+    link: "https://nike-landing-page-nine-ivory.vercel.app/",
+    github: "https://github.com/prathamxd/nike-landing-page",
+    techStack: [
+      { tech: "React", icon: "/images/react.svg" },
+      { tech: "Javascript", icon: "/images/javascript.svg" },
+      { tech: "Tailwind CSS", icon: "/images/tailwind.svg" },
+    ],
+  },
 ];
 
 import { RiJavascriptLine } from "react-icons/ri";
