@@ -81,7 +81,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Sumz",
     route: "sumz-app",
     img1: "/images/sumz1.png",
@@ -101,7 +101,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Weather App",
     route: "weather-app",
     img1: "/images/weather1.png",
@@ -120,7 +120,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Nike Landing Page",
     route: "nike-landing-page",
     img1: "/images/nike1.png",
