@@ -1,6 +1,26 @@
 export const projects = [
   {
     id: 1,
+    title: "Stress Analysis",
+    route: "stress-analysis",
+    img1: "/images/stress1.png",
+    img2: "/images/stress2.png",
+    img3: "/images/stress3.jpeg",
+    tag: "Stress Analyzer",
+    year: "2024",
+    description:
+      "This project will explore different machine learning algorithms, feature selection methodologies, and data preprocessing techniques to develop a reliable stress prediction model. Furthermore, it aims to evaluate the model's accuracy, sensitivity, and specificity to ascertain its efficiency in real-world scenarios.",
+    link: "https://stress-analyzer.vercel.app/",
+    github: "https://github.com/prathamxd/stress-analyzer",
+    techStack: [
+      { tech: "Next", icon: "/images/nextjs.svg" },
+      { tech: "Javascript", icon: "/images/javascript.svg" },
+      { tech: "Tailwind CSS", icon: "/images/tailwind.svg" },
+      { tech: "Python", icon: "/images/python.svg" },
+    ],
+  },
+  {
+    id: 2,
     title: "Complete Admin Dashboard",
     route: "admin-dashboard",
     img1: "/images/dashboard1.png",
@@ -21,7 +41,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Travel App Landing Page",
     route: "landing-page",
     img1: "/images/landing1.png",
@@ -41,7 +61,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Car Rental Showcase App",
     route: "car-showcase",
     img1: "/images/showcase1.png",
@@ -61,7 +81,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Weather App",
     route: "weather-app",
     img1: "/images/weather1.png",
