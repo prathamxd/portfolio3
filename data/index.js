@@ -5,7 +5,7 @@ export const projects = [
     route: "stress-analysis",
     img1: "/images/stress1.png",
     img2: "/images/stress2.png",
-    img3: "/images/stress3.jpeg",
+    img3: "/images/stress3.png",
     tag: "Stress Analyzer",
     year: "2024",
     description:
