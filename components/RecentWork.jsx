@@ -14,7 +14,7 @@ const RecentWork = ({ noOfProjects }) => {
       <div className="md:grid md:grid-cols-2 md:grid-rows-2 flex flex-col gap-4 ">
         {projects.slice(0, noOfProjects).map((project, idx) => (
           <Link key={idx} href={`/${project.route}`}>
-            <div className="bg-[#1A1A1A] space-y-5 rounded-2xl p-5 border-t-[1px] border-gray-600">
+            <div className="bg-[#1A1A1A] hover:bg-[#1F1F1F] transition-colors duration-300 space-y-5 rounded-2xl p-5 border-t-[1px] border-gray-600">
               <div className="flex justify-between items-center">
                 <div className="space-y-2">
                   <p className="md:text-2xl text-lg font-semibold">
