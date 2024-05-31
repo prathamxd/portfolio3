@@ -22,6 +22,13 @@ const Navbar = () => {
         </button>
 
         {dropdown && (
+          <div
+            onClick={() => setDropdown(!dropdown)}
+            className="top-0 left-0 fixed w-screen h-screen"
+          ></div>
+        )}
+
+        {dropdown && (
           <div className="w-36 bg-[#1A1A1A] absolute -ml-28 text-right lg:hidden rounded-md">
             <NavLinks />
           </div>
