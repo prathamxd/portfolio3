@@ -2,24 +2,32 @@ import Link from "next/link";
 import React from "react";
 
 const NavLinks = () => {
+  const links = [
+    { text: "/About", href: "/about" },
+    { text: "/Work", href: "/work" },
+    { text: "/Contact", href: "/contact" },
+  ];
+
   return (
-    <div className="flex md:flex-row flex-col md:gap-10 gap-8">
-      <Link href="/about" className="hover:text-theme-primary-accentColor">
-        /About
-      </Link>
-      <Link href="/work" className="hover:text-theme-primary-accentColor">
-        /Work
-      </Link>
-      <Link href="/contact" className="hover:text-theme-primary-accentColor">
-        /Contact
-      </Link>
-      <a
-        target="_blank"
-        className="hover:text-theme-primary-accentColor"
+    <div className="flex items-end justify-center md:flex-row flex-col md:gap-10">
+      {links.map((v) => {
+        return (
+          <Link
+            key={v.href}
+            href={v.href}
+            className="px-2 py-4 w-full  hover:text-theme-primary-accentColor"
+          >
+            <p className="text-nowrap">{v.text}</p>
+          </Link>
+        );
+      })}
+      <Link
+        target="_self"
+        className="px-2 py-4 w-full hover:text-theme-primary-accentColor"
         href="https://drive.google.com/file/d/1LHXjdfDc5yvvy08gRKB8pbVQqIGEsJVK/view?usp=sharing"
       >
-        /Resume
-      </a>
+        <p className="text-nowrap">/Resume</p>
+      </Link>
     </div>
   );
 };
