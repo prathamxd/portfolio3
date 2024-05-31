@@ -1,5 +1,4 @@
 import { skills } from "@/data";
-import Image from "next/image";
 
 const Skills = () => {
   return (
