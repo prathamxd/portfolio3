@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import NavLinks from "./NavLInks";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
