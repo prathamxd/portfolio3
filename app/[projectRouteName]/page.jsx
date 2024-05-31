@@ -2,8 +2,6 @@ import ProjectDetails from "@/components/ProjectDetails";
 import { projects } from "@/data";
 
 const SingleProject = ({ params }) => {
-  console.log(params);
-
   const routeName = params.projectRouteName;
 
   const getProject = () => {
