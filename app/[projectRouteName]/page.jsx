@@ -2,10 +2,7 @@ import ProjectDetails from "@/components/ProjectDetails";
 import { projects } from "@/data";
 
 const SingleProject = ({ params }) => {
-  console.log(params);
-  // console.log(projects);
-
-  const routeName = params.projectRouteName; //admin-dashboard
+  const routeName = params.projectRouteName;
 
   const getProject = () => {
     const data = projects.filter((item) => item.route === routeName);

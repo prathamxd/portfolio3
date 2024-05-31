@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import {  useState } from "react";
+import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import NavLinks from "./NavLInks";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -22,7 +22,14 @@ const Navbar = () => {
         </button>
 
         {dropdown && (
-          <div className=" w-36 h-56 bg-[#1A1A1A] p-3 absolute -ml-28 mt-2 text-right lg:hidden rounded-md">
+          <div
+            onClick={() => setDropdown(!dropdown)}
+            className="top-0 left-0 fixed w-screen h-screen"
+          ></div>
+        )}
+
+        {dropdown && (
+          <div className="w-36 bg-[#1A1A1A] absolute -ml-28 text-right lg:hidden rounded-md">
             <NavLinks />
           </div>
         )}
@@ -36,5 +43,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//                className="regular-16 text-gray-50 cursor-pointer pb-1.5 transition-all hover:font-bold "
