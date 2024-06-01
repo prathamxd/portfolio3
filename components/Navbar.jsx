@@ -8,7 +8,7 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
-    <div className="flex justify-between md:px-36 px-7 h-28 items-center font-mono">
+    <div className="flex justify-between lg:px-36 px-7 h-28 items-center font-mono">
       <Link
         href="/"
         className="text-xl hover:text-theme-primary-accentColor font-semibold"
@@ -35,7 +35,7 @@ const Navbar = () => {
         )}
       </div>
 
-      <ul className="hidden text-lg lg:block">
+      <ul className="hidden text-lg md:block">
         <NavLinks />
       </ul>
     </div>
