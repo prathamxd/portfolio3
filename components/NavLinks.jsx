@@ -24,7 +24,7 @@ const NavLinks = () => {
       <Link
         target="_self"
         className="px-2 py-4 w-full hover:text-theme-primary-accentColor"
-        href="https://drive.google.com/file/d/1LHXjdfDc5yvvy08gRKB8pbVQqIGEsJVK/view?usp=sharing"
+        href="https://drive.google.com/file/d/1f1fqCVax3ucD2hBT7u_pXtGzpZsTcD9P/view?usp=sharing"
       >
         <p className="text-nowrap">/Resume</p>
       </Link>
